@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="frontpage.css">
+</head>
+<body style="background-color:#DEB887;" >
+<div class="content">
+  <div class="w3-content w3-section" style="margin-top:20px;margin-left: 200px;margin-right: 200px; ">
+    <img class="mySlides" src="asd.jpg" alt="image1"style="width:100%">
+    <img class="mySlides" src="qwe.jpg" style="width:100%" alt="image2">
+    <img class="mySlides" src="rty.jpg" style="width:100%" alt="image3">
+    <img class="mySlides" src="poi.jpg" style="width:100%" alt="image4">
+  </div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() 
+{
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) 
+    {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 7000); 
+}
+</script>
+<div class="footer">
+  <p>Call:8888888888</p>
+</div>
+</body>
+</html>

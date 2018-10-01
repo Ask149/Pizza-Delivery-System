@@ -1,0 +1,45 @@
+<?php 
+
+  session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASK?Pizza</title>
+	<link rel="stylesheet" type="text/css" href="frontpage.css">
+  <script>
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+  }
+</script>
+
+</head>
+<body style="background-color:#DEB887;">
+<div id="navbar">
+  <a class="active" href="home_page_frame.html" target="navigate">Home</a>
+  <a href="index.html" target="navigate">Category</a>
+  <a href="menu_pagelist.php" target="navigate">Menu</a>
+  <a href="order_page/index.html" target="navigate">Orders</a>
+  <a href="#contact" target="navigate">Contact</a>
+  <a  style="float: right;" class="active" href="login.html">Login</a>
+</div>
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#menu">Menu</a></li>
+  <li><a href="#order">Order Now!</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#track">track</a></li>
+  <li style="float: right;"><a class="active" href="#login">Login</a></li>
+</ul> -->
+<iframe src="home_page_frame.html" width="100%" height="700" scrolling="yes" name="navigate" id="navigate">
+<p> iframes are not supported by this browser </p>
+</iframe>
+</body>
+</html>
